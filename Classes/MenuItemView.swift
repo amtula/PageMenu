@@ -38,7 +38,7 @@ public class MenuItemView: UIView {
         }
     }
 
-    func setText(_ text: String) {
+    public func setText(_ text: String) {
         if titleLabel != nil {
             titleLabel!.text = text
         }
