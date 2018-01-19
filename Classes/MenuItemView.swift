@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuItemView: UIView {
+public class MenuItemView: UIView {
     // MARK: - Menu item view
     
     var titleLabel : UILabel?
@@ -35,6 +35,12 @@ class MenuItemView: UIView {
             titleLabel!.text = text as String
             titleLabel!.numberOfLines = 0
             titleLabel!.sizeToFit()
+        }
+    }
+
+    func setText(_ text: String) {
+        if titleLabel != nil {
+            titleLabel!.text = text
         }
     }
     
